@@ -1,6 +1,7 @@
 package hello.hellospring.controller;
 
 import hello.hellospring.Service.MemberService;
+<<<<<<< HEAD
 import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,8 +15,23 @@ public class MemberController {
     private final MemberService memberService;
 
     @Autowired // 스프링 컨테이너에서 memberservice를 가져옴
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MemberController {
+
+    private  final MemberService memberService;
+
+    @Autowired
+>>>>>>> b766147... 스프링코어 베이직
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b766147... 스프링코어 베이직
 }
