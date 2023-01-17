@@ -13,6 +13,7 @@ public class MemberService {
 
         private final MemberRepository memberRepository;
 
+        //생성자 주입
         public MemberService(MemberRepository memberRepository) {
             this.memberRepository = memberRepository;
         }
@@ -46,5 +47,6 @@ public class MemberService {
     public Optional<Member> findOne (Long memberId){
         return memberRepository.findById(memberId);
     }
+
 
 }
