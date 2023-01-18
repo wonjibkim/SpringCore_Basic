@@ -15,5 +15,5 @@ public interface MemberRepository {
     Optional<Member> findByName(String name);
     List<Member> findAll();
 
-    void delete(Member member);
+//    void delete(Member member);
 }
